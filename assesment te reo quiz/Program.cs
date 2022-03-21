@@ -4,45 +4,53 @@
  * 
  * 
  */
-int
+
+int score = 0;
 Console.WriteLine("This program will quiz you on the Te Reo Maori Language.");
-Console.WriteLine("what does the word... translate to in english ?");
-Console.WriteLine("A.");
-Console.WriteLine("B.");
-Console.WriteLine("C.");
-Console.WriteLine("D.");
-switch ()
+
+//declare variable to store a level it can be char
+//prompt user for the level
+//read the level
+//check the level using either switch or if then else....
+
+
+Console.WriteLine("what does the word hoiho translate to in english ?");
+Console.WriteLine("A. Pig");
+Console.WriteLine("B. Hippo");
+Console.WriteLine("C. Horse");
+Console.WriteLine("D. Cat");
+switch (Hoiho)
 {
-    case "A":
-        Console.WriteLine();
+    case "A. Pig":
+        Console.WriteLine("Sorry the correct answer is C. Horse");
             break;
-    case "B":
-      Console.WriteLine();
+    case "B. Hippo":
+      Console.WriteLine("Sorry the correct answer is C. Horse");
         break;
-    case "c":
-        Console.WriteLine();
+    case "C. Horse":
+        Console.WriteLine("Correct!");
+        score++;
         break;
-    case "D":
-        Console.WriteLine();
+    case "D. Cat":
+        Console.WriteLine("Sorry the correct answer is C. Horse");
         break;
 }
-Console.WriteLine("what does the word... translate to in english ?");
-Console.WriteLine("A.");
-Console.WriteLine("B.");
-Console.WriteLine("C.");
-Console.WriteLine("D.");
-switch ()
+Console.WriteLine("what does the word Aporo translate to in english ?");
+Console.WriteLine("A. Apple");
+Console.WriteLine("B. Orange");
+Console.WriteLine("C. Strawberry");
+Console.WriteLine("D. Kiwi Fruit");
+char ans = Console.ReadLine();
+if(ans == 'A' || ans == 'a')
 {
-    case "A":
-        Console.WriteLine();
-        break;
-    case "B":
-        Console.WriteLine();
-        break;
-    case "c":
-        Console.WriteLine();
-        break;
-    case "D":
-        Console.WriteLine();
-        break;
+    Console.WriteLine("Correct!");
+    score++;
+}
+else
+{
+    Console.WriteLine("In Correct!");
+    if(score > 0)
+    {
+        score--;
+    }
 }
