@@ -13,7 +13,7 @@ Console.WriteLine("This program will quiz you on the Te Reo Maori Language.");
 //prompt user for the level
 //read the level
 //check the level using either switch or if then else....
-
+  
 Console.WriteLine("Question 1");
 Console.WriteLine("what does the word hoiho translate to in english ?");
 Console.WriteLine("A. Pig");
@@ -22,13 +22,13 @@ Console.WriteLine("C. Horse");
 Console.WriteLine("D. Cat");
 ans = Convert.ToChar(Console.ReadLine());
 
-while(ans != 'a' && ans != 'b' && ans != 'c' && ans != 'd' || ans != 'A' || ans != 'B' || ans != 'C' || ans != 'D')
+while (ans != 'a' && ans != 'b' && ans != 'c' && ans != 'd' && ans != 'A' && ans != 'B' && ans != 'C' && ans != 'D')
 {
     Console.WriteLine("Invalid selection, please select only a, b, c or d! ");
     ans = Convert.ToChar(Console.ReadLine());
 }
 
-if (ans == 'A' || ans == 'a')
+if (ans == 'C' || ans == 'c')
 {
     Console.WriteLine("Correct!");
     score++;
@@ -47,7 +47,12 @@ Console.WriteLine("A. Apple");
 Console.WriteLine("B. Orange");
 Console.WriteLine("C. Strawberry");
 Console.WriteLine("D. Kiwi Fruit");
-ans = Convert.ToChar(Console.ReadLine()); 
+ans = Convert.ToChar(Console.ReadLine());
+while (ans != 'a' && ans != 'b' && ans != 'c' && ans != 'd' && ans != 'A' && ans != 'B' && ans != 'C' && ans != 'D')
+{
+    Console.WriteLine("Invalid selection, please select only a, b, c or d! ");
+    ans = Convert.ToChar(Console.ReadLine());
+}
 if (ans == 'A' || ans == 'a')
 {
     Console.WriteLine("Correct!");
@@ -68,6 +73,11 @@ Console.WriteLine("B. Aoraki");
 Console.WriteLine("C. Aotearoa");
 Console.WriteLine("D. atora");
 ans = Convert.ToChar(Console.ReadLine());
+while (ans != 'a' && ans != 'b' && ans != 'c' && ans != 'd' && ans != 'A' && ans != 'B' && ans != 'C' && ans != 'D')
+{
+    Console.WriteLine("Invalid selection, please select only a, b, c or d! ");
+    ans = Convert.ToChar(Console.ReadLine());
+}
 if (ans == 'C' || ans == 'c')
 {
     Console.WriteLine("Correct!");
@@ -88,6 +98,11 @@ Console.WriteLine("B. Whale rider");
 Console.WriteLine("C. Happy country");
 Console.WriteLine("D. Land of milk and honey");
 ans = Convert.ToChar(Console.ReadLine());
+while (ans != 'a' && ans != 'b' && ans != 'c' && ans != 'd' && ans != 'A' && ans != 'B' && ans != 'C' && ans != 'D')
+{
+    Console.WriteLine("Invalid selection, please select only a, b, c or d! ");
+    ans = Convert.ToChar(Console.ReadLine());
+}
 if (ans == 'A' || ans == 'a')
 {
     Console.WriteLine("Correct!");
@@ -102,12 +117,17 @@ else
     }
 }
 Console.WriteLine("Question 5");
-Console.WriteLine(" What is the mori name for sweet potato?");
+Console.WriteLine(" What is the maori name for sweet potato?");
 Console.WriteLine("A. Maui");
 Console.WriteLine("B. Poto");
 Console.WriteLine("C. Karika");
 Console.WriteLine("D. Kumara");
-ans = Convert.ToChar(Console.ReadLine()); 
+ans = Convert.ToChar(Console.ReadLine());
+while (ans != 'a' && ans != 'b' && ans != 'c' && ans != 'd' && ans != 'A' && ans != 'B' && ans != 'C' && ans != 'D')
+{
+    Console.WriteLine("Invalid selection, please select only a, b, c or d! ");
+    ans = Convert.ToChar(Console.ReadLine());
+}
 if (ans == 'D' || ans == 'd')
 {
     Console.WriteLine("Correct!");
@@ -127,7 +147,12 @@ Console.WriteLine("A. Lachlan Macquarie");
 Console.WriteLine("B. Arthur Phillip");
 Console.WriteLine("C. Christopher Columbus");
 Console.WriteLine("D. James Cook");
-ans = Convert.ToChar(Console.ReadLine()); 
+ans = Convert.ToChar(Console.ReadLine());
+while (ans != 'a' && ans != 'b' && ans != 'c' && ans != 'd' && ans != 'A' && ans != 'B' && ans != 'C' && ans != 'D')
+{
+    Console.WriteLine("Invalid selection, please select only a, b, c or d! ");
+    ans = Convert.ToChar(Console.ReadLine());
+}
 if (ans == 'D' || ans == 'd')
 {
     Console.WriteLine("Correct!");
@@ -148,6 +173,11 @@ Console.WriteLine("B. Tahiti ");
 Console.WriteLine("C. Hawaiiki");
 Console.WriteLine("D. Waitangi");
 ans = Convert.ToChar(Console.ReadLine());
+while (ans != 'a' && ans != 'b' && ans != 'c' && ans != 'd' && ans != 'A' && ans != 'B' && ans != 'C' && ans != 'D')
+{
+    Console.WriteLine("Invalid selection, please select only a, b, c or d! ");
+    ans = Convert.ToChar(Console.ReadLine());
+}
 if (ans == 'C' || ans == 'c')
 {
     Console.WriteLine("Correct!");
@@ -168,6 +198,11 @@ Console.WriteLine("B. Canoe");
 Console.WriteLine("C. Potato");
 Console.WriteLine("D. Island");
 ans = Convert.ToChar(Console.ReadLine());
+while (ans != 'a' && ans != 'b' && ans != 'c' && ans != 'd' && ans != 'A' && ans != 'B' && ans != 'C' && ans != 'D')
+{
+    Console.WriteLine("Invalid selection, please select only a, b, c or d! ");
+    ans = Convert.ToChar(Console.ReadLine());
+}
 if (ans == 'B' || ans == 'b')
 {
     Console.WriteLine("Correct!");
@@ -187,7 +222,12 @@ Console.WriteLine("A. Dance ");
 Console.WriteLine("B. Shake Hands");
 Console.WriteLine("C. Point");
 Console.WriteLine("D. Sing");
-ans = Convert.ToChar(Console.ReadLine()); 
+ans = Convert.ToChar(Console.ReadLine());
+while (ans != 'a' && ans != 'b' && ans != 'c' && ans != 'd' && ans != 'A' && ans != 'B' && ans != 'C' && ans != 'D')
+{
+    Console.WriteLine("Invalid selection, please select only a, b, c or d! ");
+    ans = Convert.ToChar(Console.ReadLine());
+}
 if (ans == 'A' || ans == 'a')
 {
     Console.WriteLine("Correct!");
@@ -208,6 +248,11 @@ Console.WriteLine("B. Tekau");
 Console.WriteLine("C. Tekau ma Tahi");
 Console.WriteLine("D. Rua");
 ans = Convert.ToChar(Console.ReadLine());
+while (ans != 'a' && ans != 'b' && ans != 'c' && ans != 'd' && ans != 'A' && ans != 'B' && ans != 'C' && ans != 'D')
+{
+    Console.WriteLine("Invalid selection, please select only a, b, c or d! ");
+    ans = Convert.ToChar(Console.ReadLine());
+}
 if (ans == 'B' || ans == 'b')
 {
     Console.WriteLine("Correct!");
@@ -228,6 +273,11 @@ Console.WriteLine("B. Wedding Dance");
 Console.WriteLine("C. Joyful Dance");
 Console.WriteLine("D. Mourning Dance");
 ans = Convert.ToChar(Console.ReadLine());
+while (ans != 'a' && ans != 'b' && ans != 'c' && ans != 'd' && ans != 'A' && ans != 'B' && ans != 'C' && ans != 'D')
+{
+    Console.WriteLine("Invalid selection, please select only a, b, c or d! ");
+    ans = Convert.ToChar(Console.ReadLine());
+}
 if (ans == 'A' || ans == 'a')
 {
     Console.WriteLine("Correct!");
@@ -248,7 +298,12 @@ Console.WriteLine("B. The Sparrow");
 Console.WriteLine("C. The Kiwi");
 Console.WriteLine("D. The Moa");
 ans = Convert.ToChar(Console.ReadLine());
-if(ans == 'C' || ans == 'c')
+while (ans != 'a' && ans != 'b' && ans != 'c' && ans != 'd' && ans != 'A' && ans != 'B' && ans != 'C' && ans != 'D')
+{
+    Console.WriteLine("Invalid selection, please select only a, b, c or d! ");
+    ans = Convert.ToChar(Console.ReadLine());
+}
+if (ans == 'C' || ans == 'c')
 {
     Console.WriteLine("Correct!");
     score++;
@@ -268,6 +323,11 @@ Console.WriteLine("B. Waiheke Island");
 Console.WriteLine("C. Rangitoto");
 Console.WriteLine("D. Stewart Island");
 ans = Convert.ToChar(Console.ReadLine());
+while (ans != 'a' && ans != 'b' && ans != 'c' && ans != 'd' && ans != 'A' && ans != 'B' && ans != 'C' && ans != 'D')
+{
+    Console.WriteLine("Invalid selection, please select only a, b, c or d! ");
+    ans = Convert.ToChar(Console.ReadLine());
+}
 if (ans == 'D' || ans == 'd')
 {
     Console.WriteLine("Correct!");
@@ -288,6 +348,11 @@ Console.WriteLine("B. ata marie");
 Console.WriteLine("C. kia Ora");
 Console.WriteLine("D. hello");
 ans = Convert.ToChar(Console.ReadLine());
+while (ans != 'a' && ans != 'b' && ans != 'c' && ans != 'd' && ans != 'A' && ans != 'B' && ans != 'C' && ans != 'D')
+{
+    Console.WriteLine("Invalid selection, please select only a, b, c or d! ");
+    ans = Convert.ToChar(Console.ReadLine());
+}
 if (ans == 'B' || ans == 'b')
 {
     Console.WriteLine("Correct!");
@@ -308,6 +373,11 @@ Console.WriteLine("B. Kumete");
 Console.WriteLine("C. Wai");
 Console.WriteLine("D. Miraka");
 ans = Convert.ToChar(Console.ReadLine());
+while (ans != 'a' && ans != 'b' && ans != 'c' && ans != 'd' && ans != 'A' && ans != 'B' && ans != 'C' && ans != 'D')
+{
+    Console.WriteLine("Invalid selection, please select only a, b, c or d! ");
+    ans = Convert.ToChar(Console.ReadLine());
+}
 if (ans == 'D' || ans == 'd')
 {
     Console.WriteLine("Correct!");
@@ -327,7 +397,12 @@ Console.WriteLine("A. Ruma kaukau ");
 Console.WriteLine("B. Hohipera");
 Console.WriteLine("C. Hotera");
 Console.WriteLine("D. Whare");
-ans = Convert.ToChar(Console.ReadLine()); 
+ans = Convert.ToChar(Console.ReadLine());
+while (ans != 'a' && ans != 'b' && ans != 'c' && ans != 'd' && ans != 'A' && ans != 'B' && ans != 'C' && ans != 'D')
+{
+    Console.WriteLine("Invalid selection, please select only a, b, c or d! ");
+    ans = Convert.ToChar(Console.ReadLine());
+}
 if (ans == 'D' || ans == 'd')
 {
     Console.WriteLine("Correct!");
@@ -347,7 +422,11 @@ Console.WriteLine("A. Kanga ");
 Console.WriteLine("B. Paramu");
 Console.WriteLine("C. Ika ");
 Console.WriteLine("D. Aniana");
-ans = Convert.ToChar(Console.ReadLine());
+while (ans != 'a' && ans != 'b' && ans != 'c' && ans != 'd' && ans != 'A' && ans != 'B' && ans != 'C' && ans != 'D')
+{
+    Console.WriteLine("Invalid selection, please select only a, b, c or d! ");
+    ans = Convert.ToChar(Console.ReadLine());
+}
 if (ans == 'C' || ans == 'c')
 {
     Console.WriteLine("Correct!");
@@ -368,6 +447,11 @@ Console.WriteLine("B. Tihi");
 Console.WriteLine("C. Riwai");
 Console.WriteLine("D. Rahipere");
 ans = Convert.ToChar(Console.ReadLine());
+while (ans != 'a' && ans != 'b' && ans != 'c' && ans != 'd' && ans != 'A' && ans != 'B' && ans != 'C' && ans != 'D')
+{
+    Console.WriteLine("Invalid selection, please select only a, b, c or d! ");
+    ans = Convert.ToChar(Console.ReadLine());
+}
 if (ans == 'A' || ans == 'a')
 {
     Console.WriteLine("Correct!");
@@ -387,7 +471,12 @@ Console.WriteLine("A. Ma ");
 Console.WriteLine("B. Ma whero");
 Console.WriteLine("C. Kakariki");
 Console.WriteLine("D. Kowhai");
-ans = Convert.ToChar(Console.ReadLine()); 
+ans = Convert.ToChar(Console.ReadLine());
+while (ans != 'a' && ans != 'b' && ans != 'c' && ans != 'd' && ans != 'A' && ans != 'B' && ans != 'C' && ans != 'D')
+{
+    Console.WriteLine("Invalid selection, please select only a, b, c or d! ");
+    ans = Convert.ToChar(Console.ReadLine());
+}
 if (ans == 'C' || ans == 'c')
 {
     Console.WriteLine("Correct!");
@@ -408,6 +497,11 @@ Console.WriteLine("B. Pukepoto ");
 Console.WriteLine("C. Ma");
 Console.WriteLine("D. Pango");
 ans = Convert.ToChar(Console.ReadLine());
+while (ans != 'a' && ans != 'b' && ans != 'c' && ans != 'd' && ans != 'A' && ans != 'B' && ans != 'C' && ans != 'D')
+{
+    Console.WriteLine("Invalid selection, please select only a, b, c or d! ");
+    ans = Convert.ToChar(Console.ReadLine());
+}
 if (ans == 'C' || ans == 'c')
 {
     Console.WriteLine("Correct!");
