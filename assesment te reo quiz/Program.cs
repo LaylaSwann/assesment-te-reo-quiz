@@ -6,7 +6,7 @@ using System;
  * 
  */
 
-int score = 0; char ans;
+int score = 0; char ans; char choice;
 Console.WriteLine("This program will quiz you on the Te Reo Maori Language.");
 
 //declare variable to store a level it can be char
