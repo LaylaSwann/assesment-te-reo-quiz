@@ -34,6 +34,17 @@ do
         {
             Console.Write("n please enter a valid number");
         }
+switch{
+            case 1:
+                Console.WriteLine("ready to start level 1?");
+                    break;
+            case 2:
+                Console.WriteLine("ready to start level 2?");
+                    break;
+
+
+        }
+
 
 
 
