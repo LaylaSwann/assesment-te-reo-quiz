@@ -8,47 +8,48 @@
  * 
  */
 
-
 char choice = 'y';
 
-static void MyMethod()
-{
-    Console.WriteLine("\n~~~~~~~~~~~~~~~~~~~~~~~"); 
-    Console.WriteLine("\nLevel completed... Yay!");
-}
 
+
+Console.WriteLine("This program will quiz you on the Te Reo Maori Language.");
+
+int score = 0, option; char ans;
 do
 {
-    Console.WriteLine("This program will quiz you on the Te Reo Maori Language.");
+    Console.WriteLine("\n\t\t1. Level 1");
+    Console.WriteLine("\n\t\t2. Level 2");
+    Console.WriteLine("\n\t\t3. Level 3");
+    Console.Write("\n\n\t\tPlease enter the number of the level you want to do: ");
 
-
-    int score = 0; char ans;
-    do
+    while (!int.TryParse(Console.ReadLine(), out option) || option <= 0 || option >= 3)
     {
-        int option;
-        Console.WriteLine("\nLevel 1");
-        Console.WriteLine("Level 2");
-        Console.Write("\nPlease enter the number of the level you want to do:");
+        Console.Write("\nInvalid choice...\nPlease enter a valid number: ");
+    }
+    switch (option)
+    {
+        case 1:
+            Console.WriteLine("\nReady to start level 1?");
+            Level1();
+            break;
+        case 2:
+            Console.WriteLine("\nRready to start level 2?");
+            Level2();
+            break;
+        default:
+            Console.WriteLine("\nReady to start level 3?");
+            Level3();
+            break;
 
-        while (!int.TryParse(Console.ReadLine(), out option) || option <= 0 || option >= 3)
-        {
-            Console.Write("n please enter a valid number");
-        }
-switch{
-            case 1:
-                Console.WriteLine("ready to start level 1?");
-                    break;
-            case 2:
-                Console.WriteLine("ready to start level 2?");
-                    break;
+    }
+    void MyMethod()
+    {
+        Console.WriteLine("\n~~~~~~~~~~~~~~~~~~~~~~~");
+        Console.WriteLine("\nLevel completed... Yay!");
+    }
 
-
-        }
-
-
-
-
-
+    void Level1()
+    {
         Console.WriteLine("level 1");
         Console.WriteLine("This level has 10 questions");
         Console.WriteLine("Press enter to start Level");
@@ -308,7 +309,10 @@ switch{
             }
         }
 
+    }
 
+    void Level2()
+    {
         Console.WriteLine("level 2");
         Console.WriteLine("This level has 10 questions");
         Console.WriteLine("Press enter to start Level");
@@ -571,9 +575,48 @@ switch{
         Console.WriteLine("Your score is: ");
         altscore = score;
         Console.WriteLine(altscore);
-        Console.WriteLine("Press y then enter if you want to retake the quiz. Press enter to end the quiz.");
+
+
+    }
+
+    void Level3()
+    {
+        Console.WriteLine("level 3");
+        Console.WriteLine("This level has 10 questions");
+        Console.WriteLine("Press enter to start Level");
         Console.ReadLine();
         Console.Clear();
 
-    } while (choice == 'y');
-}
+        Console.WriteLine("Question 21");
+        Console.WriteLine("What is the Largest City in New Zealand?");
+        Console.WriteLine("A. Auckland");
+        Console.WriteLine("B. Wellington");
+        Console.WriteLine("C. Christchurch");
+        Console.WriteLine("D. Hamilton");
+        ans = Convert.ToChar(Console.ReadLine());
+        while (ans != 'a' && ans != 'b' && ans != 'c' && ans != 'd' && ans != 'A' && ans != 'B' && ans != 'C' && ans != 'D')
+        {
+            Console.WriteLine("Invalid selection, please select only a, b, c or d! ");
+            ans = Convert.ToChar(Console.ReadLine());
+        }
+        if (ans == 'A' || ans == 'a')
+        {
+            Console.WriteLine("Correct!");
+            score++;
+        }
+        else
+        {
+            Console.WriteLine("In Correct!");
+            if (score > 0)
+            {
+                score--;
+            }
+        }
+    }
+    
+    Console.WriteLine("Press y then enter if you want to retake the quiz. Press enter to end the quiz.");
+    choice = Convert.ToChar(Console.ReadLine());
+    Console.Clear();
+
+} while (choice == 'y');
+
