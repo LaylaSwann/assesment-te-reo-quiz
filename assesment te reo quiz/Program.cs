@@ -579,6 +579,7 @@ do
 
     }
 
+   
     void Level3()
     {
         Console.WriteLine("level 3");
@@ -612,6 +613,156 @@ do
                 score--;
             }
         }
+        Console.WriteLine("Question 22");
+        Console.WriteLine("Name the ocean NZ is sitting in...");
+        Console.WriteLine("A. Indan ocean");
+        Console.WriteLine("B. Pacific ocean");
+        Console.WriteLine("C. Atlantic ocean");
+        Console.WriteLine("D. African ocean");
+        ans = Convert.ToChar(Console.ReadLine());
+        while (ans != 'a' && ans != 'b' && ans != 'c' && ans != 'd' && ans != 'A' && ans != 'B' && ans != 'C' && ans != 'D')
+        {
+            Console.WriteLine("Invalid selection, please select only a, b, c or d! ");
+            ans = Convert.ToChar(Console.ReadLine());
+        }
+        if (ans == 'B' || ans == 'b')
+        {
+            Console.WriteLine("Correct!");
+            score++;
+        }
+        else
+        {
+            Console.WriteLine("In Correct!");
+            if (score > 0)
+            {
+                score--;
+            }
+        }
+        Console.WriteLine("Question 23");
+        Console.WriteLine(" New Zealand became a colony of...");
+        Console.WriteLine("A. The British Empire");
+        Console.WriteLine("B. The USA");
+        Console.WriteLine("C. Australia");
+        Console.WriteLine("D. Dutch explores");
+        ans = Convert.ToChar(Console.ReadLine());
+        while (ans != 'a' && ans != 'b' && ans != 'c' && ans != 'd' && ans != 'A' && ans != 'B' && ans != 'C' && ans != 'D')
+        {
+            Console.WriteLine("Invalid selection, please select only a, b, c or d! ");
+            ans = Convert.ToChar(Console.ReadLine());
+        }
+        if (ans == 'A' || ans == 'a')
+        {
+            Console.WriteLine("Correct!");
+            score++;
+        }
+        else
+        {
+            Console.WriteLine("In Correct!");
+            if (score > 0)
+            {
+                score--;
+            }
+        }
+        Console.WriteLine("Question 24");
+        Console.WriteLine(" Why did Maui and his brothers fight the sun?");
+        Console.WriteLine("A. The sun was too slow");
+        Console.WriteLine("B. The sun wasnt hot enough");
+        Console.WriteLine("C. The sun was too fast");
+        Console.WriteLine("D. The sun was too hot");
+        ans = Convert.ToChar(Console.ReadLine());
+        while (ans != 'a' && ans != 'b' && ans != 'c' && ans != 'd' && ans != 'A' && ans != 'B' && ans != 'C' && ans != 'D')
+        {
+            Console.WriteLine("Invalid selection, please select only a, b, c or d! ");
+            ans = Convert.ToChar(Console.ReadLine());
+        }
+        if (ans == 'C' || ans == 'c')
+        {
+            Console.WriteLine("Correct!");
+            score++;
+        }
+        else
+        {
+            Console.WriteLine("In Correct!");
+            if (score > 0)
+            {
+                score--;
+            }
+        }
+        Console.WriteLine("Question 25");
+        Console.WriteLine(" What is the name of the Maori new year?");
+        Console.WriteLine("A. The maori new year");
+        Console.WriteLine("B. Ārohirohi");
+        Console.WriteLine("C. Hinenuitepō");
+        Console.WriteLine("D. Matariki");
+        ans = Convert.ToChar(Console.ReadLine());
+        while (ans != 'a' && ans != 'b' && ans != 'c' && ans != 'd' && ans != 'A' && ans != 'B' && ans != 'C' && ans != 'D')
+        {
+            Console.WriteLine("Invalid selection, please select only a, b, c or d! ");
+            ans = Convert.ToChar(Console.ReadLine());
+        }
+        if (ans == 'D' || ans == 'd')
+        {
+            Console.WriteLine("Correct!");
+            score++;
+        }
+        else
+        {
+            Console.WriteLine("In Correct!");
+            if (score > 0)
+            {
+                score--;
+            }
+        }
+        Console.WriteLine("Question 26");
+        Console.WriteLine(" What is a Waiata?");
+        Console.WriteLine("A. Water");
+        Console.WriteLine("B. A song");
+        Console.WriteLine("C. A prayer");
+        Console.WriteLine("D. A welcoming");
+        ans = Convert.ToChar(Console.ReadLine());
+        while (ans != 'a' && ans != 'b' && ans != 'c' && ans != 'd' && ans != 'A' && ans != 'B' && ans != 'C' && ans != 'D')
+        {
+            Console.WriteLine("Invalid selection, please select only a, b, c or d! ");
+            ans = Convert.ToChar(Console.ReadLine());
+        }
+        if (ans == 'B' || ans == 'b')
+        {
+            Console.WriteLine("Correct!");
+            score++;
+        }
+        else
+        {
+            Console.WriteLine("In Correct!");
+            if (score > 0)
+            {
+                score--;
+            }
+        }
+        Console.WriteLine("Question 27");
+        Console.WriteLine(" In maori mythology who is the god of the forests and birds?");
+        Console.WriteLine("A. Tānemahuta");
+        Console.WriteLine("B. Tūmatauenga");
+        Console.WriteLine("C. Maui");
+        Console.WriteLine("D. Papatūānuku");
+        ans = Convert.ToChar(Console.ReadLine());
+        while (ans != 'a' && ans != 'b' && ans != 'c' && ans != 'd' && ans != 'A' && ans != 'B' && ans != 'C' && ans != 'D')
+        {
+            Console.WriteLine("Invalid selection, please select only a, b, c or d! ");
+            ans = Convert.ToChar(Console.ReadLine());
+        }
+        if (ans == 'A' || ans == 'a')
+        {
+            Console.WriteLine("Correct!");
+            score++;
+        }
+        else
+        {
+            Console.WriteLine("In Correct!");
+            if (score > 0)
+            {
+                score--;
+            }
+        }
     }
     
     Console.WriteLine("Press y then enter if you want to retake the quiz. Press enter to end the quiz.");
@@ -619,4 +770,3 @@ do
     Console.Clear();
 
 } while (choice == 'y');
-
