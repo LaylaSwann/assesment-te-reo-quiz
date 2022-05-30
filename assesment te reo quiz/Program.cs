@@ -22,7 +22,7 @@ do
     Console.WriteLine("\n\t\t3. Level 3");
     Console.Write("\n\n\t\tPlease enter the number of the level you want to do: ");
 
-    while (!int.TryParse(Console.ReadLine(), out option) || option <= 0 || option >= 3)
+    while (!int.TryParse(Console.ReadLine(), out option) || option <= 0 || option >= 4)
     {
         Console.Write("\nInvalid choice...\nPlease enter a valid number: ");
     }
@@ -36,17 +36,17 @@ do
             Console.WriteLine("\nRready to start level 2?");
             Level2();
             break;
+        case 3:
+            Console.WriteLine("\nReady to start level 3?");
+            Level3();
+            break;
         default:
             Console.WriteLine("\nReady to start level 3?");
             Level3();
             break;
 
     }
-    void MyMethod()
-    {
-        Console.WriteLine("\n~~~~~~~~~~~~~~~~~~~~~~~");
-        Console.WriteLine("\nLevel completed... Yay!");
-    }
+  
 
     void Level1()
     {
@@ -691,8 +691,8 @@ do
         Console.WriteLine("Question 25");
         Console.WriteLine(" What is the name of the Maori new year?");
         Console.WriteLine("A. The maori new year");
-        Console.WriteLine("B. Ārohirohi");
-        Console.WriteLine("C. Hinenuitepō");
+        Console.WriteLine("B. ?rohirohi");
+        Console.WriteLine("C. Hinenuitep?");
         Console.WriteLine("D. Matariki");
         ans = Convert.ToChar(Console.ReadLine());
         while (ans != 'a' && ans != 'b' && ans != 'c' && ans != 'd' && ans != 'A' && ans != 'B' && ans != 'C' && ans != 'D')
@@ -740,10 +740,10 @@ do
         }
         Console.WriteLine("Question 27");
         Console.WriteLine(" In maori mythology who is the god of the forests and birds?");
-        Console.WriteLine("A. Tānemahuta");
-        Console.WriteLine("B. Tūmatauenga");
+        Console.WriteLine("A. T?nemahuta");
+        Console.WriteLine("B. T?matauenga");
         Console.WriteLine("C. Maui");
-        Console.WriteLine("D. Papatūānuku");
+        Console.WriteLine("D. Papat??nuku");
         ans = Convert.ToChar(Console.ReadLine());
         while (ans != 'a' && ans != 'b' && ans != 'c' && ans != 'd' && ans != 'A' && ans != 'B' && ans != 'C' && ans != 'D')
         {
@@ -751,6 +751,78 @@ do
             ans = Convert.ToChar(Console.ReadLine());
         }
         if (ans == 'A' || ans == 'a')
+        {
+            Console.WriteLine("Correct!");
+            score++;
+        }
+        else
+        {
+            Console.WriteLine("In Correct!");
+            if (score > 0)
+            {
+                score--;
+            }
+        } Console.WriteLine("Question 28");
+        Console.WriteLine("If someone says:Kei te ngenge ahau, they are feeling ...  ");
+        Console.WriteLine("A. Sad");
+        Console.WriteLine("B. Tired");
+        Console.WriteLine("C. Hungry");
+        Console.WriteLine("D. Happy");
+        ans = Convert.ToChar(Console.ReadLine());
+        while (ans != 'a' && ans != 'b' && ans != 'c' && ans != 'd' && ans != 'A' && ans != 'B' && ans != 'C' && ans != 'D')
+        {
+            Console.WriteLine("Invalid selection, please select only a, b, c or d! ");
+            ans = Convert.ToChar(Console.ReadLine());
+        }
+        if (ans == 'B' || ans == 'b')
+        {
+            Console.WriteLine("Correct!");
+            score++;
+        }
+        else
+        {
+            Console.WriteLine("In Correct!");
+            if (score > 0)
+            {
+                score--;
+            }
+        } Console.WriteLine("Question 29");
+        Console.WriteLine("E haere ana koe ki hea? means ...  ");
+        Console.WriteLine("A. What do you mean?");
+        Console.WriteLine("B. What are you doing?");
+        Console.WriteLine("C. Where are you going?");
+        Console.WriteLine("D. Where are you from?");
+        ans = Convert.ToChar(Console.ReadLine());
+        while (ans != 'a' && ans != 'b' && ans != 'c' && ans != 'd' && ans != 'A' && ans != 'B' && ans != 'C' && ans != 'D')
+        {
+            Console.WriteLine("Invalid selection, please select only a, b, c or d! ");
+            ans = Convert.ToChar(Console.ReadLine());
+        }
+        if (ans == 'C' || ans == 'c')
+        {
+            Console.WriteLine("Correct!");
+            score++;
+        }
+        else
+        {
+            Console.WriteLine("In Correct!");
+            if (score > 0)
+            {
+                score--;
+            }
+        } Console.WriteLine("Question 30");
+        Console.WriteLine("Kia pai te moe means ...  ");
+        Console.WriteLine("A. Study hard");
+        Console.WriteLine("B. Tell the truth");
+        Console.WriteLine("C. Sleep well");
+        Console.WriteLine("D. Stand tall");
+        ans = Convert.ToChar(Console.ReadLine());
+        while (ans != 'a' && ans != 'b' && ans != 'c' && ans != 'd' && ans != 'A' && ans != 'B' && ans != 'C' && ans != 'D')
+        {
+            Console.WriteLine("Invalid selection, please select only a, b, c or d! ");
+            ans = Convert.ToChar(Console.ReadLine());
+        }
+        if (ans == 'C' || ans == 'c')
         {
             Console.WriteLine("Correct!");
             score++;
