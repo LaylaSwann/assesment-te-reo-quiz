@@ -1,4 +1,4 @@
-/* this will show the user their starting score
+/* this is will show the user their starting score
  * tell the user what they are doing
  * start user on level 1
  * ask question 1
@@ -569,12 +569,7 @@ do
             }
         }
 
-        int altscore;
-
-        Console.WriteLine("Well done on completing the quiz!");
-        Console.WriteLine("Your score is: ");
-        altscore = score;
-        Console.WriteLine(altscore);
+       
 
 
     }
@@ -836,8 +831,13 @@ do
             }
         }
     }
-    
-    Console.WriteLine("Press y then enter if you want to retake the quiz. Press enter to end the quiz.");
+    int altscore;
+
+    Console.WriteLine("Well done on completing the quiz!");
+    Console.WriteLine("Your score is: ");
+    altscore = score;
+    Console.WriteLine(altscore);
+    Console.WriteLine("Press y then enter if you want to attempt another level. Press enter to end the quiz.");
     choice = Convert.ToChar(Console.ReadLine());
     Console.Clear();
 
