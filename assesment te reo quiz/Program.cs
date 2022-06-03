@@ -1,4 +1,4 @@
-/* this is will show the user their starting score
+/* this will show the user their starting score
  * tell the user what they are doing
  * start user on level 1
  * ask question 1
@@ -686,8 +686,8 @@ do
         Console.WriteLine("Question 25");
         Console.WriteLine(" What is the name of the Maori new year?");
         Console.WriteLine("A. The maori new year");
-        Console.WriteLine("B. ?rohirohi");
-        Console.WriteLine("C. Hinenuitep?");
+        Console.WriteLine("B. Rohirohi");
+        Console.WriteLine("C. Hinenuitep");
         Console.WriteLine("D. Matariki");
         ans = Convert.ToChar(Console.ReadLine());
         while (ans != 'a' && ans != 'b' && ans != 'c' && ans != 'd' && ans != 'A' && ans != 'B' && ans != 'C' && ans != 'D')
@@ -735,10 +735,10 @@ do
         }
         Console.WriteLine("Question 27");
         Console.WriteLine(" In maori mythology who is the god of the forests and birds?");
-        Console.WriteLine("A. T?nemahuta");
-        Console.WriteLine("B. T?matauenga");
+        Console.WriteLine("A. Tanemahuta");
+        Console.WriteLine("B. Tumatauenga");
         Console.WriteLine("C. Maui");
-        Console.WriteLine("D. Papat??nuku");
+        Console.WriteLine("D. Papatuanuku");
         ans = Convert.ToChar(Console.ReadLine());
         while (ans != 'a' && ans != 'b' && ans != 'c' && ans != 'd' && ans != 'A' && ans != 'B' && ans != 'C' && ans != 'D')
         {
